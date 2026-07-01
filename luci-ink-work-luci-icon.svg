@@ -1,0 +1,127 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 배경: 깊은 자수정 플럼 -->
+    <radialGradient id="bg" cx="35%" cy="28%" r="85%">
+      <stop offset="0%" stop-color="#4a2a5c"/>
+      <stop offset="55%" stop-color="#331d40"/>
+      <stop offset="100%" stop-color="#20122b"/>
+    </radialGradient>
+
+    <!-- 앱 아이콘 라운드 사각형 마스크 -->
+    <clipPath id="squircle">
+      <path d="M256,20 C420,20 492,92 492,256 C492,420 420,492 256,492 C92,492 20,420 20,256 C20,92 92,20 256,20 Z"/>
+    </clipPath>
+
+    <!-- 젬 페싯 그라데이션들 -->
+    <linearGradient id="facetTopL" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fdf6ff"/>
+      <stop offset="100%" stop-color="#e3c9f2"/>
+    </linearGradient>
+    <linearGradient id="facetTopR" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3e0ff"/>
+      <stop offset="100%" stop-color="#caa4e8"/>
+    </linearGradient>
+    <linearGradient id="facetMidL" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d9b6ef"/>
+      <stop offset="100%" stop-color="#b183d6"/>
+    </linearGradient>
+    <linearGradient id="facetMidR" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c79ce3"/>
+      <stop offset="100%" stop-color="#9c6cc9"/>
+    </linearGradient>
+    <linearGradient id="facetLowL" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a97fcf"/>
+      <stop offset="100%" stop-color="#7f4fb0"/>
+    </linearGradient>
+    <linearGradient id="facetLowR" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9668bd"/>
+      <stop offset="100%" stop-color="#6d3f9c"/>
+    </linearGradient>
+
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f4c869" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#f4c869" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- 펜촉/스타용 그라데이션 -->
+    <radialGradient id="nibGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff8e6" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#fff8e6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nibCore" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#fffdf6"/>
+      <stop offset="55%" stop-color="#ffe9ad"/>
+      <stop offset="100%" stop-color="#d9a54a"/>
+    </radialGradient>
+    <radialGradient id="tipGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff3c4" stop-opacity="1"/>
+      <stop offset="45%" stop-color="#f4c869" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#f4c869" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <g clip-path="url(#squircle)">
+    <rect width="512" height="512" fill="url(#bg)"/>
+
+    <!-- 은은한 배경 스파클 -->
+    <circle cx="110" cy="110" r="2.5" fill="#fff" opacity="0.5"/>
+    <circle cx="150" cy="380" r="2" fill="#fff" opacity="0.35"/>
+    <circle cx="400" cy="150" r="2.2" fill="#fff" opacity="0.4"/>
+    <circle cx="420" cy="360" r="1.8" fill="#fff" opacity="0.3"/>
+
+    <!-- 젬컷 티어드롭 본체 -->
+    <g>
+      <!-- 크라운(윗부분) 페싯 -->
+      <polygon points="256,90 196,112 256,150 " fill="url(#facetTopL)"/>
+      <polygon points="256,90 316,112 256,150" fill="url(#facetTopR)"/>
+      <polygon points="196,112 156,172 256,150" fill="url(#facetTopL)"/>
+      <polygon points="316,112 356,172 256,150" fill="url(#facetTopR)"/>
+
+      <!-- 거들(중단) 페싯 -->
+      <polygon points="156,172 146,232 256,150" fill="url(#facetMidL)"/>
+      <polygon points="356,172 366,232 256,150" fill="url(#facetMidR)"/>
+      <polygon points="146,232 256,262 256,150" fill="url(#facetMidL)"/>
+      <polygon points="366,232 256,262 256,150" fill="url(#facetMidR)"/>
+
+      <!-- 파빌리온(아랫부분) 페싯 -->
+      <polygon points="146,232 182,314 256,262" fill="url(#facetLowL)"/>
+      <polygon points="366,232 330,314 256,262" fill="url(#facetLowR)"/>
+      <polygon points="182,314 256,436 256,262" fill="url(#facetLowL)"/>
+      <polygon points="330,314 256,436 256,262" fill="url(#facetLowR)"/>
+
+      <!-- 페싯 경계선 (화이트-골드 글로우) -->
+      <g fill="none" stroke-linejoin="round" stroke-linecap="round">
+        <g stroke="#fff3d6" stroke-width="3.2" stroke-opacity="0.22">
+          <path d="M256,90 L196,112 L156,172 L146,232 L182,314 L256,436 L330,314 L366,232 L356,172 L316,112 Z"/>
+          <path d="M196,112 L256,150 L316,112"/>
+          <path d="M146,232 L256,150 L366,232"/>
+          <path d="M146,232 L256,262 L366,232"/>
+          <path d="M182,314 L256,262 L330,314"/>
+        </g>
+        <g stroke="#fffdf6" stroke-width="1.1" stroke-opacity="0.85">
+          <path d="M256,90 L196,112 L156,172 L146,232 L182,314 L256,436 L330,314 L366,232 L356,172 L316,112 Z"/>
+          <path d="M196,112 L256,150 L316,112"/>
+          <path d="M146,232 L256,150 L366,232"/>
+          <path d="M146,232 L256,262 L366,232"/>
+          <path d="M182,314 L256,262 L330,314"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- 펜촉 디자인: 닙 + 스템 라인 + 잉크가 맺히는 글로우 스타 -->
+    <!-- 스템 라인 (닙 → 펜촉 끝) -->
+    <line x1="256" y1="208" x2="256" y2="378" stroke="#fff3d6" stroke-width="9" stroke-linecap="round" opacity="0.22"/>
+    <line x1="256" y1="208" x2="256" y2="378" stroke="#ffe9ad" stroke-width="3" stroke-linecap="round" opacity="0.95"/>
+
+    <!-- 닙 서클 (버전 1 스타일 복구: 화이트 서클 + 골드 글로우 + 골드 링) -->
+    <circle cx="256" cy="192" r="46" fill="url(#glow)"/>
+    <circle cx="256" cy="192" r="15" fill="#fffaf0"/>
+    <circle cx="256" cy="192" r="15" fill="none" stroke="#f4c869" stroke-width="2"/>
+
+    <!-- 펜촉 끝에 맺히는 글로우 스타 -->
+    <circle cx="256" cy="414" r="55" fill="url(#tipGlow)"/>
+    <path d="M256,380 L264,406 L290,414 L264,422 L256,448 L248,422 L222,414 L248,406 Z" fill="#fffdf6"/>
+    <circle cx="256" cy="414" r="3.2" fill="#fffdf6"/>
+
+  </g>
+</svg>
